@@ -108,7 +108,7 @@ fi
 # ffmpeg
 if [ ! -d ffmpeg ]; then
   echo "Downloading ffmpeg..."
-  git -c advice.detachedHead=false clone -q --depth 1 -b $V_FFMPEG https://github.com/cnoim/FFmpeg.git ffmpeg > /dev/null
+  git -c advice.detachedHead=false clone -q --depth 1 -b "${FFMPEG_REF:-$V_FFMPEG}" "${FFMPEG_REPO:-https://github.com/p1nbored/FFmpeg.git}" ffmpeg > /dev/null
 else
   echo "ffmpeg already exists, skipping."
 fi
@@ -143,7 +143,7 @@ fi
 # mpv
 if [ ! -d mpv ]; then
   echo "Downloading mpv..."
-  git -c advice.detachedHead=false clone -q --depth 1 -b $V_MPV https://github.com/cnoim/mpv.git mpv > /dev/null
+  git -c advice.detachedHead=false clone -q --depth 1 -b "${MPV_REF:-$V_MPV}" "${MPV_REPO:-https://github.com/p1nbored/mpv.git}" mpv > /dev/null
 else
   echo "mpv already exists, skipping."
 fi

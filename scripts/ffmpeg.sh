@@ -78,7 +78,7 @@ cd .build
   --enable-demuxer=mov,flv,mpegts,mp3,aac,hls,dash \
   --enable-demuxer=ass,ssa,srt,webvtt \
   \
-  --enable-parser=h264,hevc,av1,aac,mpegaudio,ac3,opus,mjpeg,vp8 \
+  --enable-parser=h264,hevc,av1,aac,mpegaudio,ac3,opus,mjpeg,vp8,flac \
   \
   --enable-bsf=h264_mp4toannexb,hevc_mp4toannexb,aac_adtstoasc,extract_extradata \
   \
